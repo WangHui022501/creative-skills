@@ -7,17 +7,17 @@
 | Skill | 用途 | 文件 |
 |---|---|---|
 | **City Wander Notes｜城市漫游记** | 将城市观察与感受绘制成固定女孩和小狗角色的非平涂颗粒手绘街景 | [SKILL.md](city-wander-notes/SKILL.md) |
-| **Storybook Shop Designer v2.0｜绘本店铺设定师** | 从文字原创小店或已有店铺插画开始，推导正立面、平面、完整外观轴测、室内剖切轴测、氛围和商品，输出同素材双版竖版3:4设定图 | [SKILL.md](storybook-shop-designer/SKILL.md) |
+| **Storybook Shop Designer v2.1｜绘本店铺设定师** | 从文字原创小店或已有店铺插画开始，推导正立面、平面、完整外观轴测、室内剖切轴测、氛围和商品，输出同素材双版竖版3:4设定图；**默认不使用固定人物与小狗** | [SKILL.md](storybook-shop-designer/SKILL.md) |
 
-## 联合工作流
+## 两个 Skill 的关系：独立使用，可选串联
 
-`城市里看到什么 → City Wander Notes 城市漫游插画 → 选中一家店铺 → Storybook Shop Designer 店铺原画、正立面、平面、轴测、室内场景、商品 → 有字版与纯图片版`
-
-也可以直接输入一句原创店铺创意，单独使用 Storybook Shop Designer。
+- **City Wander Notes**：角色驱动的城市漫游系列；默认使用固定女孩与小狗的官方形象设定图，城市与见闻为画面主体。
+- **Storybook Shop Designer**：店铺驱动的空间设定系统；默认**不需要、也不自动使用**上述固定角色。从一句创意或已有店铺插画出发，完成原画、立面、平面、轴测、室内与商品展示。需要人物时可使用原创店员或普通顾客。
+- **可选串联**：先用 City Wander Notes 创作街景，再选取一家店铺交给 Storybook Shop Designer 深化空间。默认只继承选中店铺的建筑视觉设计，**不自动继承女孩与小狗**；仅在用户明确指定时才引用角色档案。
 
 ## 重要：角色图片依赖
 
-City Wander Notes 要求使用用户确定的**女孩与小狗官方形象档案**作为视觉参考，路径约定为：
+**仅 City Wander Notes 默认要求**用户确定的女孩与小狗官方形象档案作为视觉参考，路径约定为：
 
 `city-wander-notes/assets/character-reference.png`
 
@@ -25,13 +25,13 @@ City Wander Notes 要求使用用户确定的**女孩与小狗官方形象档案
 
 ## 设计约定
 
-- 两个 Skill 均采用带纸张颗粒、彩铅与水彩叠色的非平涂手绘风。
+- City Wander Notes 使用较鲜明的彩铅/水彩颗粒绘本风；Storybook Shop Designer 默认采用更清爽、低颗粒、流畅圆润线条的手绘设定图风，两者画风可独立调整。
 - 城市漫游插画中城市/见闻优先；角色在画面中通常占较小比例。
 - 店铺空间视图必须依照 `原始插画 → 正立面 → 平面 → 轴测 → 氛围` 顺序保持一致。
 - 两版店铺设定图必须复用一套插画素材，而不是重新生成两张不同的图。
 
 ## 使用
 
-将对应目录作为 Skill 加载，阅读其 `SKILL.md`；对 City Wander Notes 同时提供角色参考图。
+将对应目录作为 Skill 加载，阅读其 `SKILL.md`；仅在使用 City Wander Notes 或明确要求店铺图出现其固定角色时提供角色参考图。
 
 这两个 Skill 是创作规范，不是已经具备自动几何建模及像素级角色一致性的独立程序。实际作品还需要对角色比例、空间关系、中文排版和双版素材一致性进行核查。
